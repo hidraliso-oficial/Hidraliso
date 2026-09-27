@@ -1,20 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Conheça o Hidraliso</title>
+<title>Hidraliso | Confira a Oferta</title>
 
 <meta name="description"
-content="Conheça uma nova alternativa para sua rotina de cuidados com os cabelos.">
+content="Conheça o Hidraliso e confira as opções disponíveis na página oficial.">
+
+
+<!-- =====================================================
+     GOOGLE ADS - TAG
+===================================================== -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18443198547"></script>
+
+<script>
+window.dataLayer = window.dataLayer || [];
+
+function gtag() {
+    dataLayer.push(arguments);
+}
+
+gtag('js', new Date());
+
+gtag('config', 'AW-18443198547');
+</script>
+
 
 <style>
 
-/* =========================
+/* ==============================
    RESET
-========================= */
+============================== */
 
 * {
     margin: 0;
@@ -28,8 +48,8 @@ html {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: #070309;
-    color: white;
+    background: #08030a;
+    color: #ffffff;
     overflow-x: hidden;
 }
 
@@ -37,204 +57,136 @@ a {
     text-decoration: none;
 }
 
-.container {
-    width: min(1150px, 92%);
-    margin: auto;
-}
 
-
-/* =========================
+/* ==============================
    FUNDO
-========================= */
+============================== */
 
 body::before {
     content: "";
+
     position: fixed;
 
     width: 600px;
     height: 600px;
 
-    background: #ff176b;
-    filter: blur(180px);
-    opacity: .15;
-
     top: -250px;
     left: -250px;
 
-    z-index: -5;
+    background: #ff176b;
+
+    filter: blur(180px);
+
+    opacity: .16;
+
+    z-index: -10;
 }
 
 body::after {
     content: "";
+
     position: fixed;
 
-    width: 550px;
-    height: 550px;
-
-    background: #8d2cff;
-    filter: blur(180px);
-    opacity: .14;
+    width: 600px;
+    height: 600px;
 
     right: -250px;
     bottom: -250px;
 
-    z-index: -5;
+    background: #9b2cff;
+
+    filter: blur(180px);
+
+    opacity: .13;
+
+    z-index: -10;
 }
 
 
-/* =========================
-   PARTÍCULAS
-========================= */
-
-.particle {
-    position: fixed;
-
-    width: 5px;
-    height: 5px;
-
-    border-radius: 50%;
-
-    background: #ff4f91;
-
-    box-shadow:
-        0 0 12px #ff4f91,
-        0 0 25px #ff4f91;
-
-    opacity: .5;
-
-    z-index: -2;
-
-    animation: subir 12s linear infinite;
-}
-
-.p1 {
-    left: 8%;
-    bottom: -20px;
-}
-
-.p2 {
-    left: 25%;
-    bottom: -30px;
-    animation-delay: 3s;
-}
-
-.p3 {
-    left: 48%;
-    bottom: -20px;
-    animation-delay: 6s;
-}
-
-.p4 {
-    left: 72%;
-    bottom: -30px;
-    animation-delay: 2s;
-}
-
-.p5 {
-    left: 90%;
-    bottom: -20px;
-    animation-delay: 8s;
-}
-
-@keyframes subir {
-
-    0% {
-        transform: translateY(0) scale(1);
-        opacity: 0;
-    }
-
-    20% {
-        opacity: .5;
-    }
-
-    80% {
-        opacity: .5;
-    }
-
-    100% {
-        transform: translateY(-110vh) scale(1.5);
-        opacity: 0;
-    }
-}
-
-
-/* =========================
-   TOPO
-========================= */
+/* ==============================
+   BARRA SUPERIOR
+============================== */
 
 .top-bar {
+
     background:
         linear-gradient(
             90deg,
             #ff176b,
-            #9b2cff
+            #a62cff
         );
+
+    padding: 13px 15px;
 
     text-align: center;
 
-    padding: 14px 15px;
-
     font-size: 13px;
+
     font-weight: bold;
 
     letter-spacing: .5px;
 }
 
 
-/* =========================
+/* ==============================
+   CONTAINER
+============================== */
+
+.container {
+
+    width: min(1150px, 92%);
+
+    margin: auto;
+}
+
+
+/* ==============================
    HERO
-========================= */
+============================== */
 
 .hero {
-    min-height: 750px;
+
+    padding: 80px 0;
+
+    min-height: 700px;
 
     display: flex;
+
     align-items: center;
-
-    padding: 70px 0;
-
-    background:
-        radial-gradient(
-            circle at 75% 25%,
-            rgba(255,23,107,.28),
-            transparent 35%
-        ),
-
-        radial-gradient(
-            circle at 20% 80%,
-            rgba(145,40,255,.20),
-            transparent 35%
-        );
 }
 
 .hero-grid {
+
     display: grid;
 
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns:
+        1fr 1fr;
 
     align-items: center;
 
-    gap: 70px;
+    gap: 60px;
 }
 
 
-/* =========================
+/* ==============================
    TEXTO
-========================= */
+============================== */
 
 .badge {
+
     display: inline-block;
 
     padding: 9px 17px;
 
     border-radius: 50px;
 
-    background: rgba(255,23,107,.10);
+    background:
+        rgba(255, 23, 107, .10);
 
     border:
-        1px solid rgba(255,90,150,.35);
+        1px solid rgba(255, 100, 160, .35);
 
-    color: #ff75a3;
+    color: #ff72a2;
 
     font-size: 12px;
 
@@ -246,7 +198,9 @@ body::after {
 }
 
 .hero h1 {
-    font-size: clamp(42px, 6vw, 72px);
+
+    font-size:
+        clamp(42px, 6vw, 70px);
 
     line-height: .98;
 
@@ -256,21 +210,24 @@ body::after {
 }
 
 .hero h1 span {
+
     background:
         linear-gradient(
             90deg,
             #ff397e,
-            #d650ff
+            #c24cff
         );
 
     -webkit-background-clip: text;
+
     background-clip: text;
 
     color: transparent;
 }
 
 .hero-description {
-    color: #c7c0c7;
+
+    color: #c4bdc5;
 
     font-size: 18px;
 
@@ -280,29 +237,27 @@ body::after {
 }
 
 
-/* =========================
+/* ==============================
    BOTÃO
-========================= */
+============================== */
 
 .cta {
-    position: relative;
 
-    overflow: hidden;
+    position: relative;
 
     display: inline-flex;
 
     align-items: center;
-    justify-content: center;
 
-    gap: 12px;
+    justify-content: center;
 
     margin-top: 30px;
 
-    padding: 18px 32px;
+    padding: 18px 34px;
 
-    border-radius: 10px;
+    border-radius: 11px;
 
-    color: white;
+    color: #fff;
 
     font-size: 16px;
 
@@ -312,24 +267,41 @@ body::after {
         linear-gradient(
             135deg,
             #ff176b,
-            #a82cff
+            #a72cff
         );
 
     box-shadow:
-        0 15px 40px rgba(255,23,107,.30);
+        0 15px 40px
+        rgba(255, 23, 107, .30);
 
     transition: .25s;
+
+    overflow: hidden;
+}
+
+.cta:hover {
+
+    transform:
+        translateY(-4px)
+        scale(1.02);
+
+    box-shadow:
+        0 20px 55px
+        rgba(255, 23, 107, .45);
 }
 
 .cta::before {
+
     content: "";
 
     position: absolute;
 
     top: 0;
+
     left: -120%;
 
     width: 70%;
+
     height: 100%;
 
     background:
@@ -342,7 +314,8 @@ body::after {
 
     transform: skewX(-20deg);
 
-    animation: brilho 3.5s infinite;
+    animation:
+        brilho 3.5s infinite;
 }
 
 @keyframes brilho {
@@ -360,35 +333,28 @@ body::after {
     }
 }
 
-.cta:hover {
-    transform:
-        translateY(-4px)
-        scale(1.02);
-
-    box-shadow:
-        0 20px 55px
-        rgba(255,23,107,.45);
-}
-
 .note {
-    color: #706970;
-
-    font-size: 11px;
 
     margin-top: 11px;
+
+    color: #706870;
+
+    font-size: 11px;
 }
 
 
-/* =========================
+/* ==============================
    IMAGEM PRINCIPAL
-========================= */
+============================== */
 
 .product-box {
-    min-height: 560px;
+
+    min-height: 520px;
 
     display: flex;
 
     align-items: center;
+
     justify-content: center;
 
     position: relative;
@@ -408,24 +374,27 @@ body::after {
         1px solid rgba(255,255,255,.12);
 
     box-shadow:
-        0 30px 90px rgba(0,0,0,.55);
+        0 30px 90px
+        rgba(0,0,0,.55);
 
     overflow: hidden;
 }
 
 .product-box::before {
+
     content: "";
 
     position: absolute;
 
-    width: 280px;
-    height: 280px;
+    width: 300px;
+
+    height: 300px;
 
     background: #ff176b;
 
-    filter: blur(100px);
+    filter: blur(110px);
 
-    opacity: .35;
+    opacity: .30;
 
     animation:
         pulsar 4s ease-in-out infinite;
@@ -433,18 +402,19 @@ body::after {
 
 @keyframes pulsar {
 
-    0%, 100% {
+    0%,100% {
         transform: scale(.9);
         opacity: .25;
     }
 
     50% {
-        transform: scale(1.2);
-        opacity: .45;
+        transform: scale(1.15);
+        opacity: .40;
     }
 }
 
 .product-image {
+
     position: relative;
 
     z-index: 2;
@@ -453,13 +423,14 @@ body::after {
 
     max-width: 440px;
 
-    max-height: 520px;
+    max-height: 500px;
 
     object-fit: contain;
 
     filter:
         drop-shadow(
-            0 25px 35px rgba(0,0,0,.55)
+            0 25px 35px
+            rgba(0,0,0,.60)
         );
 
     animation:
@@ -468,33 +439,37 @@ body::after {
 
 @keyframes flutuar {
 
-    0%, 100% {
+    0%,100% {
         transform: translateY(0);
     }
 
     50% {
-        transform: translateY(-14px);
+        transform: translateY(-12px);
     }
 }
 
 
-/* =========================
+/* ==============================
    SEÇÕES
-========================= */
+============================== */
 
 .section {
-    padding: 110px 0;
+
+    padding: 105px 0;
 }
 
 .section-title {
+
     max-width: 760px;
 
-    text-align: center;
+    margin:
+        0 auto 55px;
 
-    margin: 0 auto 60px;
+    text-align: center;
 }
 
-.section-title .mini {
+.mini {
+
     color: #ff5c94;
 
     font-size: 12px;
@@ -505,15 +480,18 @@ body::after {
 }
 
 .section-title h2 {
+
     font-size:
         clamp(32px, 5vw, 50px);
 
     line-height: 1.08;
 
-    margin: 12px 0 18px;
+    margin:
+        12px 0 18px;
 }
 
 .section-title p {
+
     color: #a9a2a8;
 
     font-size: 17px;
@@ -522,24 +500,15 @@ body::after {
 }
 
 
-/* =========================
+/* ==============================
    SEGUNDA IMAGEM
-========================= */
-
-.showcase {
-    background:
-        linear-gradient(
-            180deg,
-            #070309,
-            #130713,
-            #070309
-        );
-}
+============================== */
 
 .showcase-image {
+
     max-width: 950px;
 
-    margin: 0 auto 40px;
+    margin: auto;
 
     padding: 18px;
 
@@ -553,15 +522,15 @@ body::after {
         );
 
     border:
-        1px solid rgba(255,255,255,.12);
+        1px solid rgba(255,255,255,.10);
 
     box-shadow:
-        0 30px 80px rgba(0,0,0,.55);
-
-    overflow: hidden;
+        0 30px 80px
+        rgba(0,0,0,.55);
 }
 
 .showcase-image img {
+
     display: block;
 
     width: 100%;
@@ -571,20 +540,15 @@ body::after {
     object-fit: contain;
 
     border-radius: 15px;
-
-    transition: .5s;
-}
-
-.showcase-image:hover img {
-    transform: scale(1.025);
 }
 
 
-/* =========================
+/* ==============================
    CARDS
-========================= */
+============================== */
 
 .cards {
+
     display: grid;
 
     grid-template-columns:
@@ -594,7 +558,10 @@ body::after {
 }
 
 .card {
-    padding: 32px 27px;
+
+    padding: 30px;
+
+    border-radius: 18px;
 
     background:
         linear-gradient(
@@ -604,31 +571,30 @@ body::after {
         );
 
     border:
-        1px solid rgba(255,255,255,.09);
-
-    border-radius: 18px;
+        1px solid rgba(255,255,255,.08);
 
     transition: .3s;
 }
 
 .card:hover {
+
     transform:
         translateY(-7px);
 
     border-color:
         rgba(255,79,145,.35);
-
-    box-shadow:
-        0 20px 50px rgba(0,0,0,.3);
 }
 
-.card-icon {
+.icon {
+
     width: 52px;
+
     height: 52px;
 
     display: flex;
 
     align-items: center;
+
     justify-content: center;
 
     border-radius: 14px;
@@ -642,17 +608,19 @@ body::after {
 
     font-size: 22px;
 
-    margin-bottom: 22px;
+    margin-bottom: 20px;
 }
 
 .card h3 {
+
     margin-bottom: 10px;
 
     font-size: 19px;
 }
 
 .card p {
-    color: #9d969c;
+
+    color: #999;
 
     font-size: 14px;
 
@@ -660,54 +628,62 @@ body::after {
 }
 
 
-/* =========================
+/* ==============================
    DESTAQUE
-========================= */
+============================== */
 
-.dark-section {
-    padding: 110px 0;
+.highlight-section {
+
+    padding: 105px 0;
 
     background:
         radial-gradient(
-            circle at 50% 50%,
+            circle at center,
             rgba(180,40,130,.15),
-            transparent 50%
+            transparent 55%
         );
 }
 
 .highlight {
+
     display: grid;
 
-    grid-template-columns: 1fr 1fr;
-
-    gap: 60px;
+    grid-template-columns:
+        1fr 1fr;
 
     align-items: center;
+
+    gap: 60px;
 }
 
 .highlight h2 {
+
     font-size: 43px;
 
     line-height: 1.1;
 
-    margin: 15px 0 20px;
+    margin:
+        15px 0 20px;
 }
 
 .highlight p {
+
     color: #aaa;
 
     line-height: 1.8;
 }
 
 .check-list {
+
     display: flex;
 
     flex-direction: column;
 
-    gap: 17px;
+    gap: 15px;
 }
 
 .check {
+
     padding: 19px;
 
     border-radius: 12px;
@@ -719,18 +695,10 @@ body::after {
         1px solid rgba(255,255,255,.07);
 
     color: #ddd;
-
-    transition: .25s;
-}
-
-.check:hover {
-    transform: translateX(5px);
-
-    background:
-        rgba(255,255,255,.08);
 }
 
 .check span {
+
     color: #ff4f91;
 
     font-weight: bold;
@@ -739,20 +707,22 @@ body::after {
 }
 
 
-/* =========================
+/* ==============================
    CTA FINAL
-========================= */
+============================== */
 
-.big-cta {
+.final {
+
     padding: 120px 20px;
 
     text-align: center;
 
     background:
+
         radial-gradient(
             circle,
-            rgba(255,45,115,.35),
-            transparent 45%
+            rgba(255,45,115,.30),
+            transparent 50%
         ),
 
         linear-gradient(
@@ -762,7 +732,8 @@ body::after {
         );
 }
 
-.big-cta h2 {
+.final h2 {
+
     max-width: 800px;
 
     margin: auto;
@@ -773,79 +744,28 @@ body::after {
     line-height: 1.05;
 }
 
-.big-cta p {
+.final p {
+
     max-width: 650px;
 
-    margin: 20px auto;
+    margin:
+        20px auto;
 
     color: #aaa;
 
     font-size: 17px;
-}
-
-
-/* =========================
-   FAQ
-========================= */
-
-.faq {
-    max-width: 800px;
-
-    margin: auto;
-}
-
-details {
-    border-bottom:
-        1px solid rgba(255,255,255,.1);
-
-    padding: 20px 5px;
-}
-
-summary {
-    cursor: pointer;
-
-    font-weight: bold;
-
-    font-size: 16px;
-
-    list-style: none;
-}
-
-summary::-webkit-details-marker {
-    display: none;
-}
-
-summary::after {
-    content: "+";
-
-    float: right;
-
-    color: #ff4f91;
-
-    font-size: 22px;
-}
-
-details[open] summary::after {
-    content: "−";
-}
-
-details p {
-    color: #999;
-
-    font-size: 14px;
 
     line-height: 1.7;
-
-    padding-top: 15px;
 }
 
 
-/* =========================
+/* ==============================
    AVISO
-========================= */
+============================== */
 
 .notice {
-    padding: 35px 20px;
+
+    padding: 32px 20px;
 
     text-align: center;
 
@@ -858,13 +778,9 @@ details p {
     line-height: 1.7;
 }
 
-
-/* =========================
-   FOOTER
-========================= */
-
 footer {
-    padding: 30px;
+
+    padding: 25px;
 
     text-align: center;
 
@@ -876,43 +792,47 @@ footer {
 }
 
 
-/* =========================
+/* ==============================
    CELULAR
-========================= */
+============================== */
 
 @media (max-width: 850px) {
 
-    .hero {
-        padding: 60px 0;
-    }
-
     .hero-grid {
+
         grid-template-columns: 1fr;
+
         gap: 45px;
     }
 
     .hero-content {
+
         text-align: center;
     }
 
     .hero-description {
+
         margin: auto;
     }
 
-    .product-box {
-        min-height: 400px;
-    }
-
     .cards {
+
         grid-template-columns: 1fr;
     }
 
     .highlight {
+
         grid-template-columns: 1fr;
     }
 
     .highlight h2 {
+
         font-size: 36px;
+    }
+
+    .product-box {
+
+        min-height: 400px;
     }
 }
 
@@ -920,49 +840,25 @@ footer {
 @media (max-width: 500px) {
 
     .hero h1 {
+
         font-size: 43px;
     }
 
     .hero-description {
+
         font-size: 16px;
     }
 
     .cta {
+
         width: 100%;
     }
 
     .product-box {
+
         min-height: 330px;
+
         padding: 20px;
-    }
-
-}
-
-
-/* =========================
-   ANIMAÇÃO DE ENTRADA
-========================= */
-
-.hero-content,
-.product-box {
-    animation:
-        aparecer .8s ease both;
-}
-
-@keyframes aparecer {
-
-    from {
-        opacity: 0;
-
-        transform:
-            translateY(25px);
-    }
-
-    to {
-        opacity: 1;
-
-        transform:
-            translateY(0);
     }
 }
 
@@ -974,27 +870,21 @@ footer {
 <body>
 
 
-<!-- PARTÍCULAS -->
-
-<div class="particle p1"></div>
-<div class="particle p2"></div>
-<div class="particle p3"></div>
-<div class="particle p4"></div>
-<div class="particle p5"></div>
-
-
-<!-- TOPO -->
+<!-- =====================================================
+     TOPO
+===================================================== -->
 
 <div class="top-bar">
 
-✨ DESCUBRA UMA NOVA FORMA DE CUIDAR DOS SEUS CABELOS
+✨ CONHEÇA O HIDRALISO
 
 </div>
 
 
-<!-- =========================
-     PRIMEIRA PARTE
-========================= -->
+
+<!-- =====================================================
+     HERO
+===================================================== -->
 
 <section class="hero">
 
@@ -1009,6 +899,7 @@ footer {
 CUIDADOS CAPILARES
 </div>
 
+
 <h1>
 
 Seu cabelo merece
@@ -1016,41 +907,51 @@ Seu cabelo merece
 
 </h1>
 
+
 <p class="hero-description">
 
-Conheça uma alternativa para quem busca uma
-rotina mais prática de cuidados e cabelos
-com aparência mais alinhada.
+Conheça o Hidraliso e confira
+os detalhes da oferta disponível.
 
 </p>
 
+
+<!-- =================================================
+     BOTÃO 1
+================================================= -->
+
 <a
 class="cta"
-href="https://www.hidraliso.co/?pv=proyyn2e&af=afivplm31q"
-target="_blank"
-rel="noopener">
 
-QUERO CONHECER →
+href="https://www.hidraliso.co/?pv=proyyn2e&af=afivplm31q"
+
+onclick="gtag('event', 'conversion', {
+    'send_to': 'AW-18443198547/cPNCCPb_84cdENPAs9pE'
+});">
+
+COMPRAR HIDRALISO →
 
 </a>
 
+
 <div class="note">
 
-Você será direcionada para a página oficial.
+Você será direcionado para a página oficial da oferta.
 
 </div>
 
 </div>
 
 
-<!-- PRIMEIRA FOTO -->
+
+<!-- IMAGEM PRINCIPAL -->
 
 <div class="product-box">
 
 <img
-class="product-image"
 src="produto.jpg"
-alt="Produto Hidraliso">
+alt="Hidraliso"
+class="product-image">
 
 </div>
 
@@ -1062,11 +963,12 @@ alt="Produto Hidraliso">
 </section>
 
 
-<!-- =========================
-     SEGUNDA FOTO
-========================= -->
 
-<section class="section showcase">
+<!-- =====================================================
+     SEGUNDA IMAGEM
+===================================================== -->
+
+<section class="section">
 
 <div class="container">
 
@@ -1077,13 +979,19 @@ alt="Produto Hidraliso">
 CONHEÇA O PRODUTO
 </div>
 
+
 <h2>
-Veja todos os detalhes.
+
+Veja os detalhes do Hidraliso.
+
 </h2>
 
+
 <p>
-Conheça melhor o produto e confira
-as informações disponíveis na página oficial.
+
+Confira a imagem e conheça melhor
+o produto antes de acessar a oferta.
+
 </p>
 
 </div>
@@ -1093,7 +1001,7 @@ as informações disponíveis na página oficial.
 
 <img
 src="produto0.jpg"
-alt="Hidraliso">
+alt="Detalhes do Hidraliso">
 
 </div>
 
@@ -1102,11 +1010,14 @@ alt="Hidraliso">
 
 <a
 class="cta"
-href="https://www.hidraliso.co/?pv=proyyn2e&af=afivplm31q"
-target="_blank"
-rel="noopener">
 
-CONHECER A OFERTA →
+href="https://www.hidraliso.co/?pv=proyyn2e&af=afivplm31q"
+
+onclick="gtag('event', 'conversion', {
+    'send_to': 'AW-18443198547/cPNCCPb_84cdENPAs9pE'
+});">
+
+CONFERIR OFERTA →
 
 </a>
 
@@ -1118,9 +1029,10 @@ CONHECER A OFERTA →
 </section>
 
 
-<!-- =========================
-     BENEFÍCIOS
-========================= -->
+
+<!-- =====================================================
+     CARDS
+===================================================== -->
 
 <section class="section">
 
@@ -1130,15 +1042,22 @@ CONHECER A OFERTA →
 <div class="section-title">
 
 <div class="mini">
-POR QUE CONHECER?
+CONHEÇA
 </div>
 
+
 <h2>
-Uma proposta pensada para sua rotina.
+
+Uma opção para sua rotina.
+
 </h2>
 
+
 <p>
-Conheça alguns dos pontos da proposta do produto.
+
+Conheça alguns pontos sobre a proposta
+do produto.
+
 </p>
 
 </div>
@@ -1149,7 +1068,7 @@ Conheça alguns dos pontos da proposta do produto.
 
 <div class="card">
 
-<div class="card-icon">
+<div class="icon">
 ✨
 </div>
 
@@ -1158,8 +1077,10 @@ Cabelos mais alinhados
 </h3>
 
 <p>
-Uma alternativa para quem busca uma aparência
-mais alinhada e organizada nos fios.
+
+Uma alternativa para quem busca
+uma aparência mais alinhada nos fios.
+
 </p>
 
 </div>
@@ -1167,7 +1088,7 @@ mais alinhada e organizada nos fios.
 
 <div class="card">
 
-<div class="card-icon">
+<div class="icon">
 💆
 </div>
 
@@ -1176,8 +1097,10 @@ Rotina de cuidados
 </h3>
 
 <p>
-Uma opção para incluir na sua rotina
-de cuidados com os cabelos.
+
+Uma opção para incluir na sua
+rotina de cuidados capilares.
+
 </p>
 
 </div>
@@ -1185,7 +1108,7 @@ de cuidados com os cabelos.
 
 <div class="card">
 
-<div class="card-icon">
+<div class="icon">
 💖
 </div>
 
@@ -1194,8 +1117,10 @@ Mais praticidade
 </h3>
 
 <p>
-Pensado para quem procura uma maneira
-prática de cuidar dos cabelos no dia a dia.
+
+Pensado para quem procura
+praticidade no dia a dia.
+
 </p>
 
 </div>
@@ -1208,11 +1133,12 @@ prática de cuidar dos cabelos no dia a dia.
 </section>
 
 
-<!-- =========================
-     DESTAQUE
-========================= -->
 
-<section class="dark-section">
+<!-- =====================================================
+     DESTAQUE
+===================================================== -->
+
+<section class="highlight-section">
 
 <div class="container">
 
@@ -1222,58 +1148,86 @@ prática de cuidar dos cabelos no dia a dia.
 <div>
 
 <div class="badge">
-DESCUBRA
+
+CONFIRA A OFERTA
+
 </div>
 
+
 <h2>
-Conheça todos os detalhes antes de decidir.
+
+Confira as opções disponíveis.
+
 </h2>
 
+
 <p>
-Se você está procurando uma alternativa para
-cuidar dos cabelos, confira as informações
-completas e veja se essa proposta faz sentido
-para você.
+
+Acesse a página oficial da oferta
+para conferir preços, condições e
+todas as opções disponíveis.
+
 </p>
+
 
 <a
 class="cta"
-href="https://www.hidraliso.co/?pv=proyyn2e&af=afivplm31q"
-target="_blank"
-rel="noopener">
 
-CONHECER O HIDRALISO →
+href="https://www.hidraliso.co/?pv=proyyn2e&af=afivplm31q"
+
+onclick="gtag('event', 'conversion', {
+    'send_to': 'AW-18443198547/cPNCCPb_84cdENPAs9pE'
+});">
+
+VER OFERTA →
 
 </a>
 
 </div>
 
 
+
 <div class="check-list">
 
 
 <div class="check">
+
 <span>✓</span>
-Conheça os detalhes do produto
+
+Confira os detalhes do produto
+
 </div>
+
 
 <div class="check">
+
 <span>✓</span>
-Confira as informações disponíveis
+
+Veja as opções disponíveis
+
 </div>
+
 
 <div class="check">
+
 <span>✓</span>
-Veja as condições diretamente na página oficial
+
+Confira os preços atuais
+
 </div>
+
 
 <div class="check">
+
 <span>✓</span>
-Decida se faz sentido para você
+
+Acesse a página oficial da oferta
+
 </div>
 
 
 </div>
+
 
 </div>
 
@@ -1282,26 +1236,36 @@ Decida se faz sentido para você
 </section>
 
 
-<!-- =========================
-     CTA FINAL
-========================= -->
 
-<section class="big-cta">
+<!-- =====================================================
+     CTA FINAL
+===================================================== -->
+
+<section class="final">
 
 <h2>
-Quer conhecer a oferta?
+
+Quer conhecer o Hidraliso?
+
 </h2>
 
+
 <p>
-Acesse a página oficial e confira as informações
-completas sobre o produto.
+
+Confira a página oficial e veja
+todas as informações disponíveis.
+
 </p>
+
 
 <a
 class="cta"
+
 href="https://www.hidraliso.co/?pv=proyyn2e&af=afivplm31q"
-target="_blank"
-rel="noopener">
+
+onclick="gtag('event', 'conversion', {
+    'send_to': 'AW-18443198547/cPNCCPb_84cdENPAs9pE'
+});">
 
 ACESSAR PÁGINA OFICIAL →
 
@@ -1310,109 +1274,19 @@ ACESSAR PÁGINA OFICIAL →
 </section>
 
 
-<!-- =========================
-     FAQ
-========================= -->
 
-<section class="section">
-
-<div class="container">
-
-
-<div class="section-title">
-
-<div class="mini">
-DÚVIDAS
-</div>
-
-<h2>
-Perguntas frequentes
-</h2>
-
-</div>
-
-
-<div class="faq">
-
-
-<details>
-
-<summary>
-Onde vejo as informações completas?
-</summary>
-
-<p>
-As informações completas sobre o produto podem
-ser consultadas diretamente na página oficial.
-</p>
-
-</details>
-
-
-<details>
-
-<summary>
-Como saber se é adequado para mim?
-</summary>
-
-<p>
-Confira as orientações do fabricante e todas
-as informações disponíveis antes de utilizar
-o produto.
-</p>
-
-</details>
-
-
-<details>
-
-<summary>
-Como devo utilizar?
-</summary>
-
-<p>
-Siga sempre as instruções fornecidas pelo
-fabricante e as orientações presentes
-na embalagem.
-</p>
-
-</details>
-
-
-<details>
-
-<summary>
-Onde posso conhecer a oferta?
-</summary>
-
-<p>
-Clique em qualquer um dos botões desta página
-para acessar a página oficial.
-</p>
-
-</details>
-
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- AVISO -->
+<!-- =====================================================
+     AVISO
+===================================================== -->
 
 <div class="notice">
 
-Esta página possui caráter informativo e não representa
-oficialmente a marca ou o fabricante. Para informações
-atualizadas, consulte a página oficial. Resultados podem
-variar de pessoa para pessoa.
+Esta página é uma página de divulgação independente.
+Confira preços, condições e informações atualizadas
+diretamente na página oficial antes da compra.
 
 </div>
 
-
-<!-- FOOTER -->
 
 <footer>
 
@@ -1424,4 +1298,3 @@ variar de pessoa para pessoa.
 </body>
 
 </html>
-```
